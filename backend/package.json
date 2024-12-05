@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This is a full stack book store application.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon npm index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayank M Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3"
+  }
+}

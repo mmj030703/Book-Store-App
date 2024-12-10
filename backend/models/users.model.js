@@ -7,7 +7,8 @@ const userSchema = new Schema({
         required: true,
         trim: true,
         lowercase: true,
-        unique: [true, "Username should be unique !"]
+        unique: [true, "Username should be unique !"],
+        index: true
     },
     firstName: {
         type: String,
@@ -27,7 +28,8 @@ const userSchema = new Schema({
         match: [
             /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
             "Email is invalid !"
-        ]
+        ],
+        index: true
     },
     password: {
         type: String,
